@@ -1,0 +1,67 @@
+@import 'main.css';
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700);
+
+
+html {
+  background: #222; /* url(../img/name) bottom right no-repeat */
+  /* height: 100%; */
+  /* background-position: fixed; */
+  overflow-y: scroll;
+}
+
+body {
+  background: none;
+  line-height: 1.5;
+  color: #f5f5f5;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+/*make far right buttons white*/
+.navbar-nav>li>a, .navbar-brand {
+  color: #f5f5f5;
+  font-weight: bold;
+}
+
+/*get rid of background when you hover*/
+.navbar-nav>li>a:hover, .navbar-brand:hover {
+  color: #f5f5f5;
+  font-weight: bold;
+  background: none;
+}
+
+/*add | after each element*/
+.navbar-nav>li>a:after {
+  content: '|';
+  margin-left: 30px;
+}
+
+.navbar-nav>li:last-child>a:after {
+  content: '';
+}
+
+/*give box around hamburger menu lighter color*/
+.navbar-toggle {
+  background: #111;
+}
+
+/*make white lines in the hamburger menu*/
+.navbar-toggle .icon-bar {
+  background: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+  /*get ride of lines when viewing links hamburger style*/
+  .navbar-nav>li>a:after {
+    content: '';
+  }
+
+  .navbar-nav>li>a: {
+    background: #111;
+    border-radius: 4px;
+    margin-bottom: 3px;
+  }
+}
