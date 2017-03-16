@@ -104,3 +104,44 @@ p {
     font-size: 20px;
   }
 }
+
+.portfolio-title {
+  padding: 10px 15px 10px 0;
+  font-weight: bold;
+}
+
+a.nav-link.active {
+  background: #111;
+  color: #f5f5f5;
+}
+
+nav-pills a {
+  color: #f5f5f5;
+  margin-bottom: 1rem;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background: none;
+}
+
+.portfolio-item {
+  /*push images off of each other a little*/
+  margin-bottom: 1rem;
+}
+
+/*make grayscale*/
+.portfolio-item img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  border-radius: 4px;
+}
+
+/*show some color when hover*/
+.portfolio-item:hover img {
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+}
+
+.filterable-portfolio {
+  margin-bottom: 3rem;
+}
