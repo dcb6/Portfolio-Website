@@ -5,7 +5,7 @@
 html {
   background: #222; /* url(../img/name) bottom right no-repeat */
   /* height: 100%; */
-  /* background-position: fixed; */
+  /* background-attachment: fixed; */
   overflow-y: scroll;
 }
 
@@ -18,6 +18,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 /*make far right buttons white*/
@@ -54,14 +58,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  /*get ride of lines when viewing links hamburger style*/
+  /*get rid of lines when viewing links hamburger style*/
   .navbar-nav>li>a:after {
     content: '';
   }
 
-  .navbar-nav>li>a: {
+  .navbar-nav>li>a {
     background: #111;
     border-radius: 4px;
     margin-bottom: 3px;
+  }
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*margins added to push off of nav bar and any content below it*/
+.jumbotron {
+  background: none;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.jumbotron h1 {
+  font-size: 120px;
+}
+
+.jumbotron .lead {
+  font-size: 32px;
+}
+
+@media (max-width: 992px) {
+  .jumbotron h1 {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 40px;
+  }
+  .jumbotron .lead {
+    font-size: 20px;
   }
 }
