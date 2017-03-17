@@ -3,7 +3,7 @@
 
 
 html {
-  background: #222; /* url(../img/name) bottom right no-repeat */
+  background: #357B83; /* url(../img/name) bottom right no-repeat */
   /* height: 100%; */
   /* background-attachment: fixed; */
   overflow-y: scroll;
@@ -144,4 +144,24 @@ nav-pills a {
 
 .filterable-portfolio {
   margin-bottom: 3rem;
+}
+
+.site-footer span {
+  margin-right: .5em;
+}
+
+.site-footer {
+  margin-bottom: 3rem;
+}
+
+.contact-form {
+  background: #111;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 4px;
+  margin-bottom: 3rem;
+}
+
+.contact-message {
+  text-align: center;
 }
